@@ -1,0 +1,28 @@
+#include "stdafx.h"
+
+
+int main(){
+	int n = 0;
+	int i = 2;
+
+	printf("Give a number\n");
+	scanf("%d", &n);
+
+	for(i = 2; i <= n; i++){
+		while(n != i){
+			if(n%i == 0){
+				n = n/i;
+				printf("%d\n",i);
+			}else{
+				break;
+			}
+		}
+
+
+	}
+	printf("%d\n",n);
+	getchar();
+	return 0;
+}
+
+
